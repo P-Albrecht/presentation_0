@@ -13,6 +13,7 @@ import { Hero } from '../hero';
 })
 export class HeroDetailComponent implements OnInit {
   public hero: Hero | undefined;
+  detailToggel = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -36,5 +37,13 @@ export class HeroDetailComponent implements OnInit {
   private getHero(): void {
     const id: number = Number(this.route.snapshot.paramMap.get('id'));
     this.heroService.getHero(id).subscribe((hero) => (this.hero = hero));
+  }
+
+  headerClick() {
+    console.log('#########');
+    console.log(this.detailToggel);
+    console.log('#########');
+
+    this.detailToggel = !this.detailToggel;
   }
 }

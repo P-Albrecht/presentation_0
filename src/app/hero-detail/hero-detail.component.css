@@ -1,4 +1,30 @@
 /* HeroDetailComponent's private CSS styles */
+.hero-detail-container {
+  background-color: #fbfbfc;
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 15px;
+}
+
+
+.header {
+  width: 310px;
+  overflow: hidden;
+}
+
+
+.header:hover {
+  color: #050446;
+}
+
+.details {
+  width: 310px;
+  line-break: normal;
+  margin-bottom: 20px;
+  transition: height 0.3s ease-in-out;
+}
+
 label {
   color: #435960;
   font-weight: bold;
@@ -6,21 +32,38 @@ label {
 input {
   font-size: 1rem;
   padding: 0.5rem;
+  border-radius: 15px;
+  border: 1px solid rgb(110, 110, 110);
+
 }
 
 button {
   margin-top: 20px;
-  margin-right: 0.5rem;
-  background-color: #eee;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #ffffff;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 15px;
   font-size: 1rem;
+  width: 100px;
+  border: 1px solid rgb(110, 110, 110);
+
 }
 button:hover {
-  background-color: #42545c;
+  background-color: #a9d2e4;
+  border: 1px solid #a9d2e4;
+
 }
 button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+
+button.left {
+}
+
+button.right {
+  float: right;
 }
